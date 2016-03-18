@@ -1,0 +1,152 @@
+package com.example.sristy.location_tracker_one;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class MainActivity extends AppCompatActivity {
+
+    TextView tv;
+    EditText t1, t2;
+    String name, mobile, latitude, longitude, address;
+
+
+    public void save(View v)
+    {
+        name=t1.getText().toString();
+        mobile=t2.getText().toString();
+
+        SharedPreferences sp=getSharedPreferences("Location_tracker_one",MODE_PRIVATE);
+        SharedPreferences.Editor e=sp.edit();
+        e.putString("name", name);
+        e.putString("mobile", mobile);
+        e.apply();
+
+        Intent i=new Intent(this,My_Location_service.class);
+        startService(i);
+        Toast.makeText(getApplication(),"data saved",Toast.LENGTH_LONG).show();
+        finish();
+        //    new FetchData().execute("http://locationtracker-sristyarya.rhcloud.com/insert.jsp?name="+name+"&mobile="+mobile+"&latitude="+latitude+"&longitude="+longitude+"&address="+address);
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        tv=(TextView)findViewById(R.id.tv);
+        t1=(EditText)findViewById(R.id.t1);
+        t2=(EditText)findViewById(R.id.t2);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+package com.example.sristy.location_tracker_one;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class MainActivity extends AppCompatActivity {
+
+    TextView tv;
+    EditText t1, t2;
+    String name, mobile, latitude, longitude, address;
+
+
+    public void save(View v)
+    {
+        name=t1.getText().toString();
+        mobile=t2.getText().toString();
+
+        SharedPreferences sp=getSharedPreferences("Location_tracker_one",MODE_PRIVATE);
+        SharedPreferences.Editor e=sp.edit();
+        e.putString("name", name);
+        e.putString("mobile", mobile);
+        e.apply();
+
+        Intent i=new Intent(this,My_Location_service.class);
+        startService(i);
+        Toast.makeText(getApplication(),"data saved",Toast.LENGTH_LONG).show();
+        finish();
+        //    new FetchData().execute("http://locationtracker-sristyarya.rhcloud.com/insert.jsp?name="+name+"&mobile="+mobile+"&latitude="+latitude+"&longitude="+longitude+"&address="+address);
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        tv=(TextView)findViewById(R.id.tv);
+        t1=(EditText)findViewById(R.id.t1);
+        t2=(EditText)findViewById(R.id.t2);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}

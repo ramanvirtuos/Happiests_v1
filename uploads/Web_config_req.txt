@@ -1,0 +1,26 @@
+For Config file:
+DB user
+DB Password
+MT server name
+MT instance name
+Active Directory
+User Name
+For Push:
+Google project ID
+Google API key
+Package name
+
+
+For Config file:
+DB user
+DB Password
+MT server name
+MT instance name
+Active Directory
+User Name
+For Push:
+Google project ID
+Google API key
+Package name
+
+

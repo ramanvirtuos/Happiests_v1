@@ -1,0 +1,15 @@
+.....shift audience to top in notice 
+add admin panel with separate url with 1 username,password.Fixed values manage
+for every drop down load values from mysql
+.....others option in task assignment-project name
+....task assignment ,task due date,priority editable only by manager,ceo
+....delete option visible only to owner,manager.
+fetch all tasks related to a project
+create a new view showing task name,with progress bar indicating progress,persons involved,modules,.....shift audience to top in notice 
+add admin panel with separate url with 1 username,password.Fixed values manage
+for every drop down load values from mysql
+.....others option in task assignment-project name
+....task assignment ,task due date,priority editable only by manager,ceo
+....delete option visible only to owner,manager.
+fetch all tasks related to a project
+create a new view showing task name,with progress bar indicating progress,persons involved,modules,

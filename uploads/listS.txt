@@ -1,0 +1,21 @@
+1.Status Transition
+2.Navigation
+3.Agents(Jeopardy,purge,Dispatching,BGO)
+4.Rules/Objectives/Logic Domains(Standard,Secendory,Appointment Booking)/Decomposition
+5.Task insert/Schedule Update/Bumping.
+6.Polling manager,Outgoing messages,poller filter
+7.Maps/Breadcrumbs/Google Maps
+8.Workforms
+9.MSTs
+10.Mobile Forms
+11.Coding:Payment Done,MST(Unschedule and cancel),Engineer relocation,Appointment booking,Lat long,Task priority1.Status Transition
+2.Navigation
+3.Agents(Jeopardy,purge,Dispatching,BGO)
+4.Rules/Objectives/Logic Domains(Standard,Secendory,Appointment Booking)/Decomposition
+5.Task insert/Schedule Update/Bumping.
+6.Polling manager,Outgoing messages,poller filter
+7.Maps/Breadcrumbs/Google Maps
+8.Workforms
+9.MSTs
+10.Mobile Forms
+11.Coding:Payment Done,MST(Unschedule and cancel),Engineer relocation,Appointment booking,Lat long,Task priority
